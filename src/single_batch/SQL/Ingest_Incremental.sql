@@ -3,8 +3,7 @@ CREATE OR REPLACE TABLE IDENTIFIER(:catalog || '.' || :wh_db || '_' || :scale_fa
   ${raw_schema},
   batchid INT COMMENT 'Batch ID when this record was inserted'
   ${constraints}
-)
-TBLPROPERTIES (${tblprops});
+);
 
 -- COMMAND ----------
 
